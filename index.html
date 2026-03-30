@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overcast - RPG Character Profile Sheet</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>⚡ OVERCAST</h1>
+            <p class="subtitle">RPG Character Profile Sheet</p>
+        </header>
+
+        <main class="profile-sheet">
+            <!-- CHARACTER BASICS SECTION -->
+            <section class="section section-basic">
+                <h2 class="section-title">Character Basics</h2>
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label>Character Name</label>
+                        <input type="text" placeholder="Enter character name" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label>Age</label>
+                        <input type="number" placeholder="e.g., 25" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label>Race/Species</label>
+                        <input type="text" placeholder="e.g., Human, Elf, Orc" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label>Class/Archetype</label>
+                        <input type="text" placeholder="e.g., Warrior, Mage, Rogue" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label>Level/Tier</label>
+                        <input type="number" placeholder="e.g., 1-20" class="input-field">
+                    </div>
+                    <div class="form-group">
+                        <label>Experience Points</label>
+                        <input type="number" placeholder="e.g., 1000" class="input-field">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ATTRIBUTES SECTION -->
+            <section class="section section-attributes">
+                <h2 class="section-title">Core Attributes</h2>
+                <div class="attributes-grid">
+                    <div class="attribute">
+                        <div class="attribute-label">Strength</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                    <div class="attribute">
+                        <div class="attribute-label">Dexterity</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                    <div class="attribute">
+                        <div class="attribute-label">Constitution</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                    <div class="attribute">
+                        <div class="attribute-label">Intelligence</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                    <div class="attribute">
+                        <div class="attribute-label">Wisdom</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                    <div class="attribute">
+                        <div class="attribute-label">Charisma</div>
+                        <input type="number" min="1" max="20" placeholder="10" class="attribute-input">
+                    </div>
+                </div>
+            </section>
+
+            <!-- STATS & HEALTH SECTION -->
+            <section class="section section-stats">
+                <h2 class="section-title">Vital Statistics</h2>
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <label>Hit Points (HP)</label>
+                        <div class="stat-input-group">
+                            <input type="number" placeholder="Current" class="stat-input small">
+                            <span class="separator">/</span>
+                            <input type="number" placeholder="Max" class="stat-input small">
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <label>Mana/Energy</label>
+                        <div class="stat-input-group">
+                            <input type="number" placeholder="Current" class="stat-input small">
+                            <span class="separator">/</span>
+                            <input type="number" placeholder="Max" class="stat-input small">
+                        </div>
+                    </div>
+                    <div class="stat-box">
+                        <label>Armor Class (AC)</label>
+                        <input type="number" placeholder="10" class="stat-input">
+                    </div>
+                    <div class="stat-box">
+                        <label>Initiative</label>
+                        <input type="number" placeholder="0" class="stat-input">
+                    </div>
+                    <div class="stat-box">
+                        <label>Speed</label>
+                        <input type="text" placeholder="e.g., 30 ft" class="stat-input">
+                    </div>
+                    <div class="stat-box">
+                        <label>Proficiency Bonus</label>
+                        <input type="number" placeholder="+2" class="stat-input">
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section class="section section-skills">
+                <h2 class="section-title">Skills & Proficiencies</h2>
+                <div class="skills-list">
+                    <div class="skill-item">
+                        <input type="text" placeholder="Skill Name" class="skill-input">
+                        <input type="number" placeholder="Bonus" class="skill-bonus">
+                        <input type="checkbox" class="skill-proficient" title="Proficient?">
+                    </div>
+                    <div class="skill-item">
+                        <input type="text" placeholder="Skill Name" class="skill-input">
+                        <input type="number" placeholder="Bonus" class="skill-bonus">
+                        <input type="checkbox" class="skill-proficient" title="Proficient?">
+                    </div>
+                    <div class="skill-item">
+                        <input type="text" placeholder="Skill Name" class="skill-input">
+                        <input type="number" placeholder="Bonus" class="skill-bonus">
+                        <input type="checkbox" class="skill-proficient" title="Proficient?">
+                    </div>
+                    <div class="skill-item">
+                        <input type="text" placeholder="Skill Name" class="skill-input">
+                        <input type="number" placeholder="Bonus" class="skill-bonus">
+                        <input type="checkbox" class="skill-proficient" title="Proficient?">
+                    </div>
+                </div>
+            </section>
+
+            <!-- ABILITIES & POWERS SECTION -->
+            <section class="section section-abilities">
+                <h2 class="section-title">Abilities & Powers</h2>
+                <div class="abilities-list">
+                    <div class="ability-card">
+                        <input type="text" placeholder="Ability Name" class="ability-name">
+                        <textarea placeholder="Description and effects..." class="ability-desc"></textarea>
+                        <div class="ability-meta">
+                            <input type="text" placeholder="Cost/Cooldown" class="ability-cost">
+                            <input type="text" placeholder="Range" class="ability-range">
+                        </div>
+                    </div>
+                    <div class="ability-card">
+                        <input type="text" placeholder="Ability Name" class="ability-name">
+                        <textarea placeholder="Description and effects..." class="ability-desc"></textarea>
+                        <div class="ability-meta">
+                            <input type="text" placeholder="Cost/Cooldown" class="ability-cost">
+                            <input type="text" placeholder="Range" class="ability-range">
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- APPEARANCE SECTION -->
+            <section class="section section-appearance">
+                <h2 class="section-title">Appearance</h2>
+                <div class="appearance-grid">
+                    <div class="appearance-item">
+                        <label>Height & Build</label>
+                        <input type="text" placeholder="e.g., 6'0\", athletic" class="input-field">
+                    </div>
+                    <div class="appearance-item">
+                        <label>Hair</label>
+                        <input type="text" placeholder="e.g., Black, wavy" class="input-field">
+                    </div>
+                    <div class="appearance-item">
+                        <label>Eyes</label>
+                        <input type="text" placeholder="e.g., Ice blue" class="input-field">
+                    </div>
+                    <div class="appearance-item">
+                        <label>Distinguishing Features</label>
+                        <input type="text" placeholder="e.g., Scar, tattoo, etc." class="input-field">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label>General Description</label>
+                    <textarea placeholder="Detailed physical description..." class="textarea-field"></textarea>
+                </div>
+            </section>
+
+            <!-- PERSONALITY & BACKGROUND SECTION -->
+            <section class="section section-personality">
+                <h2 class="section-title">Personality & Background</h2>
+                <div class="form-group full-width">
+                    <label>Personality Traits</label>
+                    <textarea placeholder="List key personality traits..." class="textarea-field"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label>Background Story</label>
+                    <textarea placeholder="Tell the character's story..." class="textarea-field"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label>Motivations & Goals</label>
+                    <textarea placeholder="What drives this character?..." class="textarea-field"></textarea>
+                </div>
+                <div class="form-group full-width">
+                    <label>Fears & Weaknesses</label>
+                    <textarea placeholder="Character weaknesses and fears..." class="textarea-field"></textarea>
+                </div>
+            </section>
+
+            <!-- RELATIONSHIPS SECTION -->
+            <section class="section section-relationships">
+                <h2 class="section-title">Relationships & Connections</h2>
+                <div class="relationships-list">
+                    <div class="relationship-card">
+                        <input type="text" placeholder="Name" class="relationship-name">
+                        <input type="text" placeholder="Relationship" class="relationship-type">
+                        <textarea placeholder="Details..." class="relationship-notes"></textarea>
+                    </div>
+                    <div class="relationship-card">
+                        <input type="text" placeholder="Name" class="relationship-name">
+                        <input type="text" placeholder="Relationship" class="relationship-type">
+                        <textarea placeholder="Details..." class="relationship-notes"></textarea>
+                    </div>
+                </div>
+            </section>
+
+            <!-- INVENTORY SECTION -->
+            <section class="section section-inventory">
+                <h2 class="section-title">Inventory & Equipment</h2>
+                <div class="inventory-list">
+                    <div class="inventory-item">
+                        <input type="text" placeholder="Item Name" class="item-name">
+                        <input type="number" placeholder="Qty" class="item-qty">
+                        <input type="text" placeholder="Notes" class="item-notes">
+                    </div>
+                    <div class="inventory-item">
+                        <input type="text" placeholder="Item Name" class="item-name">
+                        <input type="number" placeholder="Qty" class="item-qty">
+                        <input type="text" placeholder="Notes" class="item-notes">
+                    </div>
+                    <div class="inventory-item">
+                        <input type="text" placeholder="Item Name" class="item-name">
+                        <input type="number" placeholder="Qty" class="item-qty">
+                        <input type="text" placeholder="Notes" class="item-notes">
+                    </div>
+                </div>
+                <div class="form-group full-width">
+                    <label>Wealth & Currency</label>
+                    <input type="text" placeholder="e.g., 500 gold, 25 silver" class="input-field">
+                </div>
+            </section>
+
+            <!-- NOTES SECTION -->
+            <section class="section section-notes">
+                <h2 class="section-title">Additional Notes</h2>
+                <div class="form-group full-width">
+                    <textarea placeholder="Campaign notes, plot hooks, special items, etc." class="textarea-field large"></textarea>
+                </div>
+            </section>
+
+            <!-- ACTION BUTTONS -->
+            <div class="action-buttons">
+                <button class="btn btn-primary" onclick="saveCharacter()">💾 Save Character</button>
+                <button class="btn btn-secondary" onclick="exportPDF()">📄 Export to PDF</button>
+                <button class="btn btn-tertiary" onclick="resetForm()">🔄 Reset</button>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>Overcast Character Profile Sheet v1.0 | Perfect for any RPG system</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
