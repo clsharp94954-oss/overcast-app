@@ -1,0 +1,23 @@
+.container {
+    background-color: white;
+    color: darkgrey;
+}
+
+.header {
+    background-color: grey;
+    color: white;
+}
+
+.footer {
+    background-color: darkgrey;
+    color: white;
+}
+
+.button {
+    background-color: grey;
+    color: white;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
